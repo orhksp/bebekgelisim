@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bebek Gelişim Takibi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bebek Gelişim Takibi</h1>
+        <form id="babyForm">
+            <label for="babyName">Bebek İsmi:</label>
+            <input type="text" id="babyName" name="babyName" required>
+            
+            <label for="birthDate">Doğum Tarihi:</label>
+            <input type="date" id="birthDate" name="birthDate" required>
+            
+            <div id="growthRecords"></div>
+            <button type="button" id="addRecordBtn">Yeni Kayıt Ekle</button>
+            <button type="submit">Verileri Göster</button>
+        </form>
+        <button id="downloadPdfBtn">PDF İndir</button>
+        <div id="charts">
+            <canvas id="heightChart" width="400" height="200"></canvas>
+            <canvas id="weightChart" width="400" height="200"></canvas>
+            <canvas id="headCircumferenceChart" width="400" height="200"></canvas>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns"></script>
+    <script src="https://cdn.jsdelivr.net/npm/pdfmake/build/pdfmake.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/pdfmake/build/vfs_fonts.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
