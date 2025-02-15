@@ -1,66 +1,45 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
-    color: #333;
-    margin: 0;
-    padding: 20px; /* Sayfanın üstüne boşluk eklemek için */
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start; /* Flex yönünde hizalamayı değiştirmek için */
-    overflow-y: auto;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
 }
 
 .container {
-    background: #fff;
+    max-width: 800px;
+    margin: 0 auto;
     padding: 20px;
+    background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 1000px;
-    margin-bottom: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
     text-align: center;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-label {
-    margin-top: 10px;
-}
-
-input {
-    padding: 8px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-button {
-    margin-top: 10px;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #007bff;
-    color: #fff;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #0056b3;
+    color: #333;
 }
 
 #charts {
-    display: flex;
-    flex-direction: column;
     margin-top: 20px;
 }
 
 canvas {
-    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.record {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.record label, .record input {
+    margin-right: 10px;
+}
+
+.record button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
 }
